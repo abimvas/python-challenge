@@ -44,6 +44,7 @@ with open(data1_csv, newline="") as csvreader:
     
     print("Greatest Decrease in Revenue: " + str(increase_month)+ " " + "($" + str(increase_amt) + ")")
 
+#print to txt file
 text_file = open("Output.txt", "w")
 text_file.write("Financial Analysis")
 text_file.write("\n---------------------")
