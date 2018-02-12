@@ -43,3 +43,13 @@ with open(data1_csv, newline="") as csvreader:
     decrease_month = min((r[0]) for r in csv.reader(csvreader))
     
     print("Greatest Decrease in Revenue: " + str(increase_month)+ " " + "($" + str(increase_amt) + ")")
+
+text_file = open("Output.txt", "w")
+text_file.write("Financial Analysis")
+text_file.write("\n---------------------")
+text_file.write("\nTotal Months: " + str(total_months))
+text_file.write("\nTotal Revenue: $" + str(total))
+text_file.write("\nAverage Revenue Change: $" + str(average))
+text_file.write("\nGreatest Increase in Revenue: " + str(increase_month)+ " " + "($" + str(increase_amt) + ")")
+text_file.write("\nGreatest Decrease in Revenue: " + str(increase_month)+ " " + "($" + str(increase_amt) + ")")
+text_file.close()
